@@ -348,7 +348,22 @@ form > button {
   flex-direction: row;
 }
 
-/* MEDIA QUERIES */
+/* FOOTER SYLES
+//////////// */
+
+footer > i {
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+footer {
+  text-align: center;
+  background-color: aqua;
+  /* height: 50px; */
+}
+
+/* MEDIA QUERIES
+////////////// */
 @media screen and (max-width: 1290px) {
   #contact_page {
     padding-left: 0;
@@ -373,31 +388,16 @@ form > button {
     display: block;
   }
 
-  .about > h2 {
-    padding-left: 0;
-  }
-
-  .about > h3 {
-    padding-left: 0;
-  }
-
-  .about > ul {
-    margin-left: 0;
-  }
-
-  .about > p {
-    margin-left: 0;
-  }
-
-  .testimony > h3 {
-    padding-left: 0;
-  }
-
+  .about > h2,
+  .about > h3,
+  .testimony > h3,
   .testimony_text {
     padding-left: 0;
   }
 
-  .testimony_content > img {
+  .about > ul,
+  .testimony_content > img,
+  .about > p {
     margin-left: 0;
   }
 
@@ -458,5 +458,30 @@ form > button {
   .testimony_text {
     margin-top: 0;
     margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #resume_page > h2 {
+    text-align: left;
+  }
+
+  #resume_page > h3,
+  #resume_page > h4,
+  #resume_page > h5,
+  #resume_page > p,
+  #resume_page > .duties_list,
+  #resume_page > a,
+  .location {
+    padding-left: 0;
+  }
+
+  #resume_page > hr {
+    margin-left: 0;
+  }
+
+  .form_input,
+  button {
+    font-size: 15px;
   }
 }
