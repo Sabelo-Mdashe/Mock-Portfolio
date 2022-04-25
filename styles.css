@@ -22,7 +22,7 @@
 nav {
   align-items: flex-end;
   position: fixed;
-  background-color: grey;
+  background-color: rgba(35, 34, 34, 0.3);
   z-index: 1000;
 
   height: 70px;
